@@ -1,4 +1,5 @@
 .text
+main:
         li      $v0, 4
         la      $a0, string
         syscall
@@ -17,5 +18,6 @@
         li      $a0, '\n'
         syscall
 
-.data
-        string: .ascizz "Enter a number: "
+        .data
+string:
+        .ascizz "Enter a number: "
